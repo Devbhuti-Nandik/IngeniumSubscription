@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title>News Letter Signup</title>
+
+    <!--Bootstrap CDN-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="css/signup.css" rel="stylesheet" />
+  
+  </head>
+  <body class="text-center">
+    <main class="form-signin">
+      <form action="/" method="POST">
+        <img
+          class="logo"
+          src="images\logo.png"
+          alt=""
+          width="72"
+          height="57"
+        />
+        <h1 class="h3 mb-3 fw-normal">Sign Up to Our Newsletter</h1>
+        <h5>(Get latest deals at your door step)</h5>
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control top"
+            id="FirstName"
+            name="firstName"
+            placeholder="First Name"
+            autofocus
+            required
+          />
+          
+        </div>
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control middle"
+            id="LastName"
+            name="lastName"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control bottom"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+        <div class="btn-signup">
+          <button class="w-100 btn btn-lg btn-primary btn-width" type="submit">
+            Sign me up
+          </button>
+        </div>
+        <p class="mt-5 mb-3 text-muted copyright">&copy; Pepsi</p>
+      </form>
+    </main>
+  </body>
+</html>
