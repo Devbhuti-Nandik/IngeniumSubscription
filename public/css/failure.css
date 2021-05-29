@@ -3,9 +3,22 @@ body {
   height: 100%;
 }
 
+:root{
+  --mainTransition:all 0.1s linear;
+  --mainSpacing:3px;
+}
+
 .bg-texture{
-    background-color: #ffffff;
-    background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+}
+.header-bg{
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+}
+.lead{
+  letter-spacing: 3px;
+  color:white;
 }
 .bg-img{
     display: block;
@@ -15,4 +28,96 @@ body {
     width: 50%;
     height: 20vh;
     opacity: 0.2;
+    transition: all 0.1s linear;
+}
+.failure-text{
+  color: #FF6347 !important;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: var(--mainSpacing);
+}
+
+.btn-failure{
+  background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%);
+  background-size: 200% auto;
+  transition: var(--mainTransition);
+  color: var(--mainBlack);         
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: 'ZCOOL KuaiLe', cursive;
+  font-size: 2.3rem;
+  border-radius: 10px; 
+  border: none;
+  cursor: pointer;
+  letter-spacing: var(--mainSpacing);
+  background-color: transparent;
+}
+.btn-failure:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.btn-failure:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.main-svg{
+  display: flex;
+  justify-content: center;
+}
+.svg{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.svg-img{
+  background-image: url("/images/Sad.svg");
+  display: inline-block;
+  background-size: cover;
+}
+
+@media screen and (max-width:500px){
+  .svg-img{
+      width: 15rem;
+      height: 15rem;
+    }
+    .btn-success{
+        font-size: 2.3rem;
+    }
+}
+@media screen and (min-width: 500px) {
+  .svg-img{
+    width: 25rem;
+    height: 25rem;
+  }
+  .btn-success{
+      font-size: 2.3rem;
+  }
+}
+@media screen and (min-width:600px){
+  .svg-img{
+    width: 30rem;
+    height: 30rem;
+  }
+  .btn-success{
+      font-size: 2.3rem;
+  }
+}
+@media screen and (min-width: 768px){
+  .svg-img{
+    width: 30rem;
+    height: 30rem;
+  }
+}
+@media screen and (min-width: 992px){
+  .svg-img{
+    width: 40rem;
+    height: 40rem;
+  }
+}
+@media screen and (min-width: 1200px){
+  .svg-img{
+    width: 40rem;
+    height: 40rem;
+  }
 }

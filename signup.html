@@ -4,32 +4,37 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
-    <title>News Letter Signup</title>
+    <title>Ingenium Subscription</title>
+
+    <!--Fav Icon-->
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />  
 
     <!--Bootstrap CDN-->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
 
     <!-- Custom styles for this template -->
     <link href="css/signup.css" rel="stylesheet" />
+
+    
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
   
   </head>
   <body class="text-center">
     <main class="form-signin">
-      <form action="/" method="POST">
-        <img
-          class="logo"
-          src="images\logo.png"
-          alt=""
-          width="72"
-          height="57"
-        />
-        <h1 class="h3 mb-3 fw-normal">Sign Up to Our Newsletter</h1>
-        <h5>(Get latest deals at your door step)</h5>
+      <form action="/" method="POST" autocomplete="off">
+        <div class="logo">
+          <h1>ingenium</h1>
+        </div>
+        <div class="header">
+          <h2 class="mb-3">Subscribe & Stay Updated</h2>
+          <h5 class="mb-3">Get access to all the posts at the earliest</h5>
+        </div>
+        <input style="display: none" autocomplete="false"/>
         <div class="form-floating">
           <input
             type="text"
@@ -39,8 +44,9 @@
             placeholder="First Name"
             autofocus
             required
+            autocomplete="new-password";
           />
-          
+          <label for="floatingInput" class="label-color">First Name</label>
         </div>
         <div class="form-floating">
           <input
@@ -50,7 +56,9 @@
             name="lastName"
             placeholder="Last Name"
             required
+            autocomplete="new-password";
           />
+          <label for="floatingInput" class="label-color">Last Name</label>
         </div>
         <div class="form-floating">
           <input
@@ -60,14 +68,20 @@
             name="email"
             placeholder="Email"
             required
+            autocomplete="off"
           />
-        <div class="btn-signup">
-          <button class="w-100 btn btn-lg btn-primary btn-width" type="submit">
-            Sign me up
+          <label for="floatingInput" class="label-color">Email</label>
+        </div>
+        <div class="signup">
+          <button class="btn-signup" type="submit">
+            Let's Go
           </button>
         </div>
-        <p class="mt-5 mb-3 text-muted copyright">&copy; Pepsi</p>
+        
       </form>
     </main>
+    
   </body>
+
 </html>
+

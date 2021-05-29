@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Failure Page</title>
     
+    <!--Fav Icon-->
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+    
     <!--Bootstrap CDN-->
     <link
       rel="stylesheet"
@@ -15,17 +18,26 @@
     />
     <!-- Custom styles for this template -->
     <link href="css/failure.css" rel="stylesheet" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+
 </head>
 <body class="bg-texture">
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid header-bg">
         <div class="container">
-            <h1 class="display-4">Uh snap!</h1>
+            <h1 class="display-4 failure-text">Uh snap!</h1>
             <p class="lead">There is a failure in the signup process. Please try again or contact the developer.</p>
             <form action="/failure" method="post">
-                <button class="btn btn-lg btn-warning" type="submit" name="Back">Back to home</button>
+                <button class="btn-failure" type="submit" name="Back">Take me back</button>
             </form>
         </div>
     </div>
-    <img src="images\sad.svg" alt="" class="bg-img">
+    <div class="main-svg">
+        <div class="svg">
+            <span class="svg-img"></span>
+        </div>
+    </div>
 </body>
 </html>

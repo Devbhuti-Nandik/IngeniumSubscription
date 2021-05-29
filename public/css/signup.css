@@ -3,13 +3,22 @@ body {
   height: 100%;
 }
 
+:root{
+  --mainWhite:#ffffff;
+  --logoColor:gold;
+  --mainBlack:#000000;
+  --mainSpacing: 2px;
+  --mainTransition:all 0.1s linear;
+
+}
+
 body {
   display: flex;
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/connected.png");
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
 }
 
 .form-signin {
@@ -21,6 +30,7 @@ body {
 
 .form-floating{
     position: relative;
+    color:var(--mainWhite);
 }
 
 .form-control{
@@ -35,29 +45,86 @@ body {
 
 .form-signin .form-floating:focus-within {
   z-index: 2;
+  color: var(--mainBlack);
+}
+.form-floating input, select, textarea{
+  color: var(--mainWhite);
+}
+.form-floating input:focus {  
+  color: #fff; 
+}
+.form-floating input:focus{
+  background-color: transparent;
+}
+.label-color{
+  color: var(--mainWhite);
 }
 
 .top {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  border-radius: 30px;
+  border: 2.5px solid var(--logoColor);
 }
 
 .middle{
-  border-radius: 0;
-  margin-bottom: -1px;
+  border-radius: 30px;
+  margin-top: 5%;
+  border: 2.5px solid var(--logoColor);
 }
 
 .bottom{
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  border-radius: 30px;
+  margin-top: 5%;
+  border: 2.5px solid var(--logoColor);
 }
 .logo{
-  height: 10rem;
+  width: 100%;
+  text-align: center;
+}
+.logo h1{
+  font-family: 'Yesteryear', cursive;
+  font-size: 7rem;
+  color:var(--logoColor);
+}
+.header{
+  width: 100%;
+}
+.header h2{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+  color: var(--mainWhite);
+  letter-spacing: var(--mainSpacing);
+}
+.header h5{
+  color: var(--mainWhite);
+  letter-spacing: var(--mainSpacing);
+}
+.signup{
+  width: 100%;
 }
 .btn-signup{
-  margin-top: 5%;
+  margin-top: 8%;
+  background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%);
+  background-size: 200% auto;
+  transition: var(--mainTransition);
+  color: var(--mainBlack);         
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: 'ZCOOL KuaiLe', cursive;
+  font-size: 1.5rem;
+  border-radius: 10px; 
+  border: none;
+  cursor: pointer;
+  letter-spacing: var(--mainSpacing);
+
+}
+.btn-signup:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.btn-signup:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 .btn-width{
   width: 100%;
